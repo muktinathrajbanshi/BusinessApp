@@ -55,17 +55,27 @@
                       <div class="col-6">
                         <ul class="pagination justify-content-end set_quantity">
                           <li class="page-item">
-                            <button class="page-link"><i class="fa-solid fa-minus"></i></button>
+                            <button class="page-link" onclick="decreaseNumber()"><i class="fa-solid fa-minus"></i></button>
                           </li>
                           <li class="page-item">
                             <input type="text" name="" class="page-link" value="1" id="textbox" ></input>
                           </li>
                           <li class="page-item">
-                            <button class="page-link"><i class="fa-solid fa-plus"></i></button>
+                            <button class="page-link" onclick="increaseNumber()"><i class="fa-solid fa-plus"></i></button>
                           </li>
                         </ul>
                       </div>
                     </div>
+                    <!-- remove move and price  -->
+                     <div class="row">
+                      <div class="col-8 d-flex justify-content-between remove_wish">
+                        <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                        <p><i class="fas fa-heart"></i>MOVE TO WISH LIST</p>
+                      </div>
+                      <div class="col-4 d-flex justify-content-end price_money">
+                        <h3>$<span id="itemval">0.00</h3>
+                      </div>
+                     </div>
                   </div>
                 </div>
               </div>
