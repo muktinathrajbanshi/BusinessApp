@@ -37,3 +37,30 @@ h2 {
 .card {
   border: none;
 }
+
+.product_img img {
+  min-width: 200px;
+  max-height: 200px;
+}
+
+.product_name {
+  color: black;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.card-title p {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.remove_wish p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+.price_money h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
