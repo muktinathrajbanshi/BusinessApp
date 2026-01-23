@@ -1,5 +1,6 @@
-const decreaseNumber = (incdec) => {
-    let itemval = document.getElementById(incdec);
+const decreaseNumber = (incdec, itemprice) => {
+    var itemval = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
     console.log(itemval);
 
     if(itemval.value <= 0) {
@@ -10,11 +11,13 @@ const decreaseNumber = (incdec) => {
         itemval.value = parseInt(itemval.value) - 1;
          itemval.style.background = "#fff";
         itemval.style.color = "#000";
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
     }
 }
 
-const increaseNumber = (incdec) => {
-    let itemval = document.getElementById(incdec);
+const increaseNumber = (incdec, itemprice) => {
+    var itemval = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
     console.log(itemval);
 
     if(itemval.value >= 5) {
@@ -24,5 +27,7 @@ const increaseNumber = (incdec) => {
         itemval.style.color = "#fff";
     } else {
         itemval.value = parseInt(itemval.value) + 1;
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
     }
 }
+
