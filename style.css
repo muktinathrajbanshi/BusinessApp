@@ -117,3 +117,10 @@ h2 {
 .fa-heart:hover {
   color: red;
 }
+
+/*  MOBILE RESPONSIVE */
+@media (max-width: 375px) {
+  .set_quantity::after {
+    bottom: -40px;
+  }
+}
