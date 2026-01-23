@@ -1,4 +1,7 @@
 var product_total_amt = document.getElementById("product_total_amt");
+var shipping_charge = document.getElementById("shipping_charge");
+var total_card_amt = document.getElementById("total_card_amt");
+
 
 const decreaseNumber = (incdec, itemprice) => {
     var itemval = document.getElementById(incdec);
@@ -15,6 +18,7 @@ const decreaseNumber = (incdec, itemprice) => {
         itemval.style.color = "#000";
         itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
         product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
+        total_card_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
     }
 }
 
@@ -32,6 +36,7 @@ const increaseNumber = (incdec, itemprice) => {
         itemval.value = parseInt(itemval.value) + 1;
         itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
         product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 15;
+        total_card_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
     }
 }
 
