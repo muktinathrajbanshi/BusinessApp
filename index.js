@@ -1,3 +1,5 @@
+var product_total_amt = document.getElementById("product_total_amt");
+
 const decreaseNumber = (incdec, itemprice) => {
     var itemval = document.getElementById(incdec);
     var itemprice = document.getElementById(itemprice);
@@ -12,6 +14,7 @@ const decreaseNumber = (incdec, itemprice) => {
          itemval.style.background = "#fff";
         itemval.style.color = "#000";
         itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
     }
 }
 
@@ -28,6 +31,7 @@ const increaseNumber = (incdec, itemprice) => {
     } else {
         itemval.value = parseInt(itemval.value) + 1;
         itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 15;
     }
 }
 
